@@ -1,0 +1,82 @@
+/*
+    Criar variáveis
+    Mudar atributos width e height para calc()
+    */
+
+body{
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.main-left {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    width: 15vw;
+    height: auto;
+    background-color: aqua;
+    border: 1px solid blue;
+}
+
+.aside div {
+    padding-left: 50px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    width: 85vw;
+    height: 15vh;
+    border: 1px solid red;
+}
+
+.header .cell {
+    width: auto;
+    height: auto;
+    color: black;
+    border: 1px solid black;
+}
+
+.cell.search {
+    grid-column-start:1;
+    grid-column-end:3;
+}
+
+.cell.profile2 {
+    grid-column-start:1;
+    grid-column-end:3;
+}
+
+.cell.bttns {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto auto;
+}
+
+.content {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 85vw;
+    height: 85vh;
+    border: 1px solid purple;
+}
