@@ -69,6 +69,31 @@ border: 1px solid red;
 }
 
 .content {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
     border: 1px solid violet;
     padding: 0.5rem 2rem;
+}
+
+.cards {
+    border: 1px solid aqua;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.cards.small1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.cards.small2 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.cards.big {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
