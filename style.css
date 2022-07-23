@@ -111,9 +111,8 @@ border: 1px solid red;
 }
 
 .cards {
-    border: 1px solid aqua;
+    border: 1px solid blue;
     padding: 10px;
-    
 }
 
 .cards.small1 {
@@ -122,13 +121,38 @@ border: 1px solid red;
 }
 
 .cards.small2 {
+    
     grid-row-start: 3;
     grid-row-end: 5;
 }
 
-.cards.big {
+.projects {
     grid-row-start: 1;
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end: 4;
+    border: 1px solid aqua;
+    padding-left: 10px;
+}
+
+.title {
+    margin: 0;
+    padding: 0;    
+}
+
+.cards.big {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.card {
+    border: 1px solid red;
+    margin-bottom: 20px;
+    height:100%;
 }
