@@ -18,9 +18,10 @@ body{
 }
 
 .main {
-min-height: 100vh;
-display: grid;
-grid-template: auto 4fr/ 1fr 4fr;
+    min-height: 100vh;
+    display: grid;
+    grid-template: auto 4fr/ 1fr 4fr;
+    border-radius: 20px;
 }
 
 .sidebar {
@@ -122,6 +123,36 @@ grid-template: auto 4fr/ 1fr 4fr;
     grid-row-end: 5;
 }
 
+.card {
+    border-radius: 20px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-bottom: 20px;
+    height:100%;
+}
+
+.card img {
+    margin-top: 20px;
+    width:200px;
+    height: 200px;
+}
+
+.card .actions{
+    margin-top: 10px;
+}
+
+.card .actions a {
+    display: inline-flex;
+    width: 100px;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    background-color: royalblue;
+    border: none;
+    border-radius: 50px;
+}
+
 .projects {
     grid-row-start: 1;
     grid-row-end: 5;
@@ -144,9 +175,4 @@ grid-template: auto 4fr/ 1fr 4fr;
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end: 4;
-}
-
-.card {
-    margin-bottom: 20px;
-    height:100%;
 }
